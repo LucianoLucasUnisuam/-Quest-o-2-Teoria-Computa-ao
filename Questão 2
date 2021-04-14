@@ -1,0 +1,209 @@
+using System;
+
+namespace numero_2_prova_tc
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string sim = "sim";
+            while (sim == "sim")
+            {
+
+                Console.WriteLine("================================");
+
+                Console.WriteLine("L(G1) = {ab_n | n >= 0 }");
+                // Linguagem obtida de L(G1) [infinito]: { y, ab, abb, abbb, abbbb , abbbbb , abbbbbb, ... }          
+
+                Console.WriteLine("L(G2) = {a_n b_n | n >= 1 }");
+                // Linguagem obtida de L(G2) [infinito] : { ab,aabb,aaabbb,aaaabbbb,aaaaa bbbbb, aaaaaabbbbbb, aaaaaaabbbbbbb, ...}            
+
+                Console.WriteLine("L(G1).L(G2) ");
+                // Linguagem obtida de L(G1).L(G2) [infinito] : { aab, abaabb, abbaaabbb , abbbaaaabbbb, abbbbaaaaabbbbb,  abbbbbaaaaaabbbbbb, abbbbbbaaaaaabbbbbb, abbbbbbbaaaaaaabbbbbbb, abbbbbbbbaaaaaaaabbbbbbbb, ... }
+
+                Console.WriteLine("================================");
+
+                Console.Write("Dadas as linguages a cima, digite um String pertencente a linguagem L(G1).L(G2) : ");
+                string string_pertencente = Console.ReadLine();
+
+                Console.WriteLine("================================");
+
+                if (string_pertencente == "ab")
+                {
+                    Console.WriteLine("Pertence a L(G1) e L(G2) ");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                } //L(G2) e L(G1)
+
+                else if (string_pertencente == "aabb")
+                { //L(G2)
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aaabbb")//L(G2)
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aaaabbbb")//L(G2)
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aaaaabbbbb")//L(G2)
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aaaaaabbbbbb")//L(G2)
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aaaaaaabbbbbbb")//L(G2)
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente.Contains("aaaaaaabbbbbbb"))
+                {
+                    Console.WriteLine("Pertence a L(G2)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "a") //L(G1) 
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "ab")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbbbb")//L(G1)
+                {
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente.Contains("abbbbbbbb"))
+                { //L(G1)
+                    Console.WriteLine("Pertence a L(G1)");
+                    Console.WriteLine("Nao pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "aab") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abaabb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbaaabbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbaaaabbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbaaaaabbbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbaaaaaabbbbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbaaaaaabbbbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbbaaaaaaabbbbbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else if (string_pertencente == "abbbbbbbbaaaaaaaabbbbbbbb") //L(G1).L(G2) 
+                {
+                    Console.WriteLine("Pertence a L(G1).L(G2)");
+                }
+
+                else
+                {
+                    Console.WriteLine("Nao pertence\n\n\n\n\n");
+                }
+
+                Console.WriteLine("================================");
+
+                Console.Write("deseja continuar, sim ou nao ?  ");
+                sim = Console.ReadLine();
+
+                Console.Clear();
+            }
+            Console.Clear();
+            Console.WriteLine("\nPrograma fechado\n\n");
+
+
+
+        }
+    }
+}
